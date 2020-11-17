@@ -1,0 +1,24 @@
+{
+  "name": "vite-vue-poc",
+  "LICENSE": "MIT",
+  "scripts": {
+    "build": "ts-node ./build.ts"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^9.0.4",
+    "@types/koa-mount": "^4.0.0",
+    "@types/koa-static": "^4.0.1",
+    "@vue/server-renderer": "^3.0.2",
+    "typescript": "^4.0.5",
+    "vite": "^1.0.0-rc.9",
+    "vue": "^3.0.2",
+    "vue-router": "^4.0.0-rc.2"
+  },
+  "devDependencies": {
+    "fs-extra": "^9.0.1",
+    "koa": "^2.13.0",
+    "koa-mount": "^4.0.0",
+    "koa-static": "^5.0.0",
+    "ts-node": "^9.0.0"
+  }
+}
