@@ -4,8 +4,7 @@ import {
   createMemoryHistory,
   Router,
 } from "vue-router";
-import Home from "./components/Homepage.vue";
-import PageA from "./components/PageA.vue";
+import { defineAsyncComponent as def } from "vue";
 
 export const getRouter = (options: { engine: "client" | "server" }): Router => {
   const routerHistory =
@@ -16,11 +15,11 @@ export const getRouter = (options: { engine: "client" | "server" }): Router => {
     routes: [
       {
         path: "/",
-        component: Home,
+        component: def(() => import("./components/Homepage.vue")),
       },
       {
         path: "/a",
-        component: PageA,
+        component: def(() => import("./components/PageA.vue")),
       },
     ],
   });

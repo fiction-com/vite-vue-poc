@@ -1,4 +1,4 @@
-# Vite SSR Testing 
+# Vue / Vite SSR Testing 
 
 To run the build and see issue: 
 
